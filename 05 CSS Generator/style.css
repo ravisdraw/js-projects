@@ -60,7 +60,7 @@ textarea:focus {
     width: 5rem;
 }
 
-.display ,
+.display,
 .property {
     position: absolute;
     font-size: 0.3rem;
@@ -70,15 +70,15 @@ textarea:focus {
 }
 
 .display {
-   left: 2rem;
+    left: 2rem;
 }
 
-.property{
+.property {
     color: white;
     background-color: #182C61;
 }
 
-button{
+button {
     padding: 0.2rem;
     font-size: 0.3rem;
     background-color: #ff6982;
@@ -89,6 +89,6 @@ button{
     cursor: pointer;
 }
 
-button:hover{
+button:hover {
     background-color: #ED4C67;
 }
