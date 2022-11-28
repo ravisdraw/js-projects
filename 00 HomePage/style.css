@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: D8DFF6;
+    width: 100vw;
+    height: 100vh;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container{
+    margin-top: 2rem;
+    background-color: F3F6FF;
+    height:40rem;
+    width: 25rem;
+    border-radius: 4rem 4rem 0rem 0rem;
+}
