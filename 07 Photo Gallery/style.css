@@ -17,20 +17,20 @@ body {
     height: 100vh;
     margin: 2rem;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 12rem);
+    grid-template-columns: repeat(auto-fill, 4rem);
     justify-content: center;
     align-content: center;
     gap: 2rem;
 }
 
 .images {
-    height: 8rem;
-    width: 11rem;
+    height: 5rem;
+    width: 5rem;
     object-fit: cover;
     object-position: center;
     box-shadow: rgb(0, 5, 11) 0px 20px 30px -10px;
     background-color: rgb(37, 15, 15);
-    padding: 0.3rem;
+    padding: 0.2rem;
 }
 
 .modal {
