@@ -6,55 +6,68 @@
     box-sizing: border-box;
     font-family: 'Poppins',
         sans-serif;
+    font-size: 10px;
 }
 
 body {
     background-color: #D8DFF6;
     width: 100vw;
     height: 100vh;
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     overflow: hidden;
 }
 
 .container {
     margin: 2rem 2rem 0rem 2rem;
     background-color: #F3F6FF;
-    height: 100%;
-    width: 100%;
+    /* height: 100%;
+    width: 100%; */
     border-radius: 4rem 4rem 0 0;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    flex-direction: column;
-    position: relative;
+    flex-direction: column; */
+    /* position: relative; */
     font-weight: 600;
+    margin-top: 2rem;
+}
+
+.wrapper{
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* flex-direction: column; */
+    padding: 6rem;
+    height: 100%;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .title-1 {
-    position: absolute;
+    /* position: absolute; */
     font-size: 1.5rem;
     color: #6F7178;
-    top: 2.5rem;
-    left: 2rem;
+    /* top: 2.5rem;
+    left: 2rem; */
 }
 
 .title-2 {
-    position: absolute;
+    /* position: absolute; */
     color: black;
     font-size: 2.5rem;
-    top: 6rem;
+    /* top: 6rem;
     left: 2rem;
+    margin-bottom: 2rem; */
 }
 
 .card-wrapper {
-    width: 100%;
-    height: 100%;
-    margin-top: 12rem;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,30rem);
+    gap: 0.5rem;
+    margin-top: 4rem;
+    place-content: center;
 }
 
 .card1 {
