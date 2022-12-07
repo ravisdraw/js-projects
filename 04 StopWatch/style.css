@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: lightcoral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    overflow: hidden;
+    font-size: 40px;
+}
+
+.container{
+    height: 18rem;
+    width: 18rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.frame{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 3.7rem;
+}
+
+.hrs,
+.mins,
+.sec,
+.millisec{
+    width: 1.6rem;
+}
+
+button{
+    font-size: 1rem;
+    color: black;
+    cursor: pointer;
+    border: none;
+    margin: 0.6rem;
+    padding: 0.6rem;
+    border-radius: 0.3rem;
+    margin-top: 2rem;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.start{
+ margin-left: 1.8rem;
+}
+
+.stopwatch{
+    margin: 1.7rem;
+    margin-left: 3.2rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.ravi{
+    margin-top: 0.4rem;
+    font-size: 1rem;
+    color: dimgrey;
+    font-weight: 300;
+}
+
+.active {
+    background-color: #2ecc71;
+}
+
+.deactive {
+    background-color: #e74c3c;
+}
+
+.reactive{
+    background-color: #1abc9c;
+}
+
+.disable-btn{
+    cursor: not-allowed;
+}
