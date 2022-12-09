@@ -1,23 +1,13 @@
 const input_box = document.querySelector('.input_cls');
-const copyBtn = document.querySelector('#cpy_btn');
-const genBtn = document.querySelector('#genBtn');
 const form = document.querySelector('.form');
 const num = document.querySelector('#num');
 const small = document.querySelector('#small');
 const large = document.querySelector('#large');
 const sym = document.querySelector('#sym');
 
-copyBtn.addEventListener('click', async () => {
-    const input_val = input_box.value;
-    if (input_box) {
-        await navigator.clipboard.writeText(input_val);
-        alert('Copied Clipboard');
-    } else {
-        alert('There is no password to Copy');
-    }
-})
+form.addEventListener('submit', async (e) => {
+    e.preventDefault();
 
-genBtn.addEventListener('click', () => {
     const limit = 8;
     let generatedPass = '';
     const checkArray = functionArray.filter(({
@@ -32,11 +22,13 @@ genBtn.addEventListener('click', () => {
         generatedPass += letter;
     }
     input_box.value = generatedPass;
-
-})
-
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
+    const input_val = input_box.value;
+    if (input_val) {
+        await navigator.clipboard.writeText(input_val);
+        alert('Copied Clipboard');
+    } else {
+        alert('There is no password to Copy');
+    }
 })
 
 function generatePassword(min, max) {
