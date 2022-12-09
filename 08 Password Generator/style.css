@@ -13,7 +13,7 @@ body {
     height: 100vh;
     width: 100vw;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     overflow: hidden;
     user-select: none;
@@ -23,6 +23,7 @@ body {
 .title-wrap {
     text-align: end;
     margin-bottom: 2rem;
+    margin-top: 3rem;
 }
 
 .title {

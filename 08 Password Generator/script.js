@@ -22,7 +22,6 @@ form.addEventListener('submit', async (e) => {
         generatedPass += letter;
     }
     input_box.value = generatedPass;
-    await new Promise(r => setTimeout(r, 1000));
     const input_val = input_box.value;
     if (input_val) {
         await navigator.clipboard.writeText(input_val);
