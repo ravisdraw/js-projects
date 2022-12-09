@@ -24,14 +24,14 @@ body {
     color: white;
     font-size: 2rem;
     position: absolute;
-    top: 5rem;
+    top: 2rem;
     padding: 2rem;
 }
 
 .sub {
     font-size: 1rem;
     font-weight: 300;
-    top: 8rem;
+    top: 5rem;
 }
 
 .container {
