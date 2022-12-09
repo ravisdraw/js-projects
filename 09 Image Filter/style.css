@@ -21,6 +21,7 @@ body {
 .control {
     display: flex;
     justify-content: space-between;
+    align-items: start;
 }
 
 .ctrlBtn {
@@ -31,7 +32,7 @@ body {
 }
 
 .btn {
-    font-size: 0.2rem;
+    font-size: 0.25rem;
     color: white;
     background-color: 22A39F;
     border: none;
@@ -49,17 +50,20 @@ body {
     display: flex;
     align-items: flex-end;
     flex-direction: column;
+    margin-right: 0.2rem;
 }
 
 .searchbox{
-    font-size: 0.2rem;
+    font-size: 0.25rem;
     padding: 0.1rem;
     outline: none;
+    height: 0.5rem;
+    width: 2rem;
 }
 
 h6{
     color: white;
-    font-size: 0.15rem;
+    font-size: 0.2rem;
     font-weight: 100;
 }
 
