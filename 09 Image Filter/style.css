@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',
+        sans-serif;
+}
+
+html {
+    font-size: 50px;
+}
+
+body {
+    background-color: 434242;
+    padding: 0.5rem;
+    user-select: none;
+    overflow: none;
+}
+
+.control {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ctrlBtn {
+    display: flex;
+    gap: 0.1rem;
+    justify-content:start;
+    align-items: center;
+}
+
+.btn {
+    font-size: 0.2rem;
+    color: white;
+    background-color: 22A39F;
+    border: none;
+    padding: 0.1rem;
+    cursor: pointer;
+}
+
+.btn:hover,
+.active {
+    color: black;
+    background-color: #F3EFE0;
+}
+
+.inputName{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+.searchbox{
+    font-size: 0.2rem;
+    padding: 0.1rem;
+    outline: none;
+}
+
+h6{
+    color: white;
+    font-size: 0.15rem;
+    font-weight: 100;
+}
+
+
+.photos {
+    margin-top: 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(3rem, 1fr));
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.imgBox {
+    height: 4rem;
+    width: 3rem;
+    cursor: pointer;
+    border: 0.1rem solid #222222;
+    overflow: hidden;
+    border-radius: 0.1rem;
+}
+
+.photos img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    transform-origin: top;
+}
+
+/* .photos img:hover {
+    transform: scale(1.5);
+} */
