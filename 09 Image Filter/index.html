@@ -11,10 +11,10 @@
 <body>
     <div class="control">
         <div class="ctrlBtn">
-            <button class="btn active">All</button>
-            <button class="btn">Timon</button>
-            <button class="btn">Phineas</button>
-            <button class="btn">Popeye</button>
+            <button class="btn" data-filter="all">All</button>
+            <button class="btn" data-filter="timon">Timon</button>
+            <button class="btn" data-filter="phineas">Phineas</button>
+            <button class="btn" data-filter="popeye">Popeye</button>
         </div>
         <div class="inputName">
             <input type="text" class="searchbox" placeholder="Search Photo">
@@ -23,12 +23,12 @@
     </div>
 
     <div class="photos">
-        <div class="imgBox"><img src="../Assets/01.JPG"></div>
-        <div class="imgBox"><img src="../Assets/02.JPG"></div>
-        <div class="imgBox"><img src="../Assets/03.jpg"></div>
-        <div class="imgBox"><img src="../Assets/04.jpg"></div>
-        <div class="imgBox"><img src="../Assets/05.jpg"></div>
-        <div class="imgBox"><img src="../Assets/06.jpg"></div>
+        <div class="imgBox" data-filter="timon"><img src="../Assets/01.JPG"></div>
+        <div class="imgBox" data-filter="pumbaa"><img src="../Assets/02.JPG"></div>
+        <div class="imgBox" data-filter="jackie"><img src="../Assets/03.jpg"></div>
+        <div class="imgBox" data-filter="popeye"><img src="../Assets/04.jpg"></div>
+        <div class="imgBox" data-filter="kick"><img src="../Assets/05.jpg"></div>
+        <div class="imgBox" data-filter="phineas"><img src="../Assets/06.jpg"></div>
     </div>
     <script src="./script.js"></script>
 </body>
