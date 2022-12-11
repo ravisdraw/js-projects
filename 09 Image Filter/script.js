@@ -22,6 +22,19 @@ btns.forEach((btn) => {
     btn.addEventListener('click', (e) => {
         e.preventDefault();
         setActiveClass(e);
+        const BtnFilter = e.target.dataset.filter;
+        imgBox.forEach((box) => {
+            if (BtnFilter == 'all') {
+                box.style.display = 'block';
+            } else {
+                const boxFilter = box.dataset.filter;
+                if (boxFilter == BtnFilter) {
+                    box.style.display = 'block';
+                } else {
+                    box.style.display = 'none';
+                }
+            }
+        })
     })
 })
 
