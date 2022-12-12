@@ -8,7 +8,7 @@
 }
 
 html {
-    font-size: 40px;
+    font-size: 20px;
 }
 
 body {
@@ -17,8 +17,8 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
     user-select: none;
+    margin-top: 2rem;
 }
 
 .container {
@@ -41,6 +41,7 @@ img {
 
 .imageSilder {
     display: flex;
+    transition: all 0.5s ease;
 }
 
 .imagePreview {
@@ -48,13 +49,21 @@ img {
     width: 14.6rem;
     height: 2.5rem;
     display: flex;
+    gap: 0.1rem;
+    justify-content: center;
 }
 
 .imgPrev {
     display: flex;
+    background-color: red;
+    height: 3rem;
+    width: 3rem;
+    overflow: hidden;
+    justify-content: center;
 }
 
-.imgPrev img {
-    width: 80%;
-    display: block;
+.imagePreview img {
+    height: 5rem;
+    width: 5rem;
+    object-fit: cover;
 }
