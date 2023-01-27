@@ -17,12 +17,12 @@ btnStart.addEventListener('click', () => {
             ms = 0;
             s++;
         }
-        if(s==60){
+        if (s == 60) {
             s = 0;
             m++;
         }
-        if(m==60){
-            m=0;
+        if (m == 60) {
+            m = 0;
             h++;
         }
         updateValues();
@@ -86,4 +86,53 @@ function updateValues() {
 
     millisec[0].innerText = pms[0];
     millisec[1].innerText = pms[1];
+}
+
+
+// Keypoints slider 
+
+var source = document.getElementById("source");
+var destination = document.getElementById("destination");
+while (source.firstChild) {
+    destination.appendChild(source.firstChild);
+}
+
+var sliderIndex = 0;
+const slides = document.querySelectorAll('.keypoints');
+const totalSlides = slides.length;
+
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
+
+nextBtn.addEventListener('click', () => {
+    slides.forEach(silde => {
+        silde.classList.remove('active');
+    })
+    slides[sliderIndex].classList.add('active');
+    nextBtnCounter()
+})
+
+prevBtn.addEventListener('click', () => {
+    slides.forEach(silde => {
+        silde.classList.remove('active');
+    })
+    slides[sliderIndex].classList.add('active');
+    prevBtnCounter()
+})
+
+function nextBtnCounter() {
+    if (sliderIndex == totalSlides - 1) {
+        sliderIndex = 0;
+    } else {
+        sliderIndex++;
+    }
+}
+
+function prevBtnCounter() {
+    if (sliderIndex == 0) {
+        sliderIndex = totalSlides - 1;
+    } else {
+        sliderIndex--;
+    }
+
 }
