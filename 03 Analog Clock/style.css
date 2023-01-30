@@ -200,49 +200,49 @@ body {
     transform: rotate(var(--rotate));
 }
 
-/* .number-1 {
+.number-1 {
     --rotate: 30deg;
 }
 
 .number-2 {
     --rotate: 60deg;
-} */
+}
 
 .number-3 {
     --rotate: 90deg;
 }
 
-/* .number-4 {
+.number-4 {
     --rotate: 120deg;
 }
 
 .number-5 {
     --rotate: 150deg;
-} */
+}
 
 .number-6 {
     --rotate: 180deg;
 }
 
-/* .number-7 {
+.number-7 {
     --rotate: 210deg;
 }
 
 .number-8 {
     --rotate: 240deg;
-} */
+}
 
 .number-9 {
     --rotate: 270deg;
 }
 
-/* .number-10 {
+.number-10 {
     --rotate: 300deg;
 }
 
 .number-11 {
     --rotate: 330deg;
-} */
+}
 
 .needle {
     --rotation: 0;

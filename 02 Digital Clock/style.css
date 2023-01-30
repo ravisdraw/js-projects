@@ -195,6 +195,6 @@ h2 {
 .m::before,
 .s::before {
     content: '8';
-    color: rgba(255, 255, 255, 0.308);
+    color: rgba(255, 255, 255, 0.132);
     position: absolute;
 }

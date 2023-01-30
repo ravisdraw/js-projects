@@ -10,14 +10,45 @@
 
 <body>
 
-    <div class="container">
-        <textarea id="txtarea"></textarea>
-        <div class="control">
-            <div class="property">All corners</div>
-            <div class="display"></div>
-            <input type="range" id="points" value="0" name="points" min="0" max="156">
+    <div id="source">
+        <div class="project-container">
+            <div class="main-container">
+                <textarea id="txtarea"></textarea>
+                <div class="control">
+                    <div class="property">All corners</div>
+                    <div class="display"></div>
+                    <input type="range" id="points" value="0" name="points" min="0" max="156">
+                </div>
+                <button onclick="copy()" >Copy Clipboard</button>
+            </div>
         </div>
-        <button onclick="copy()" >Copy Clipboard</button>
+        </div>
+
+    <div class="container">
+        <div id="destination"></div>
+        <div class="details">
+            <h1>CSS GENERATOR</h1>
+            <div class="keypoints">
+                content 1
+            </div>
+            <div class="keypoints">
+                content 2
+            </div>
+            <div class="keypoints">
+               Do your best
+            </div>
+            <div class="keypoints">
+               All the best
+            </div>
+            <div class="keypoints active">
+                This will remove the bottom border from the div, while keeping the other borders intact kjahda aksjhda 
+            </div>
+            <div class="control-btns">
+                <div class="prev-btn">&#10094;</div>
+                <div class="next-btn">&#10095;</div>
+            </div>
+        </div>
+        <div class="tag">Designed by Ravi</div>
     </div>
     <script src="./script.js"></script>
 </body>

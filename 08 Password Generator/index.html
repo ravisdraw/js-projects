@@ -9,41 +9,66 @@
 </head>
 
 <body>
-    <div class="title-wrap">
-        <div class="title">Password Generator</div>
-        <h1 class="title sub">Designed by Ravi</h1>
+
+    <div id="source">
+        <div class="project-container">
+            <form action="" class="form check">
+                <div class="form-group">
+                    <input type="text" class="input_cls">
+                </div>
+    
+                <div class="form-group">
+                    <input type="checkbox" class="chk_box" id="num">
+                    <label for="">Numbers</label>
+                </div>
+    
+                <div class="form-group">
+                    <input type="checkbox" class="chk_box" id="small">
+                    <label for="">Small Characters</label>
+                </div>
+    
+                <div class="form-group">
+                    <input type="checkbox" class="chk_box" id="large">
+                    <label for="">Large Characters</label>
+                </div>
+    
+                <div class="form-group">
+                    <input type="checkbox" class="chk_box" id="sym">
+                    <label for="">Symbols</label>
+                </div>
+    
+                <div class="form-group">
+                    <button class="btn len">Generate Password</button>
+                </div>
+            </form>
+        </div>
     </div>
+
     <div class="container">
-        <form action="" class="form check">
-            <div class="form-group">
-                <input type="text" class="input_cls">
-                <!-- <button id="cpy_btn" class="btn">Copy</button> -->
+        <div id="destination"></div>
+        <div class="details">
+            <h1>PASSWORD GENERATOR</h1>
+            <div class="keypoints">
+                content 1
             </div>
-
-            <div class="form-group">
-                <input type="checkbox" class="chk_box" id="num">
-                <label for="">Numbers</label>
+            <div class="keypoints">
+                content 2
             </div>
-
-            <div class="form-group">
-                <input type="checkbox" class="chk_box" id="small">
-                <label for="">Small Characters</label>
+            <div class="keypoints">
+               Do your best
             </div>
-
-            <div class="form-group">
-                <input type="checkbox" class="chk_box" id="large">
-                <label for="">Large Characters</label>
+            <div class="keypoints">
+               All the best
             </div>
-
-            <div class="form-group">
-                <input type="checkbox" class="chk_box" id="sym">
-                <label for="">Symbols</label>
+            <div class="keypoints active">
+                This will remove the bottom border from the div, while keeping the other borders intact kjahda aksjhda 
             </div>
-
-            <div class="form-group">
-                <button class="btn len">Generate Password</button>
+            <div class="control-btns">
+                <div class="prev-btn">&#10094;</div>
+                <div class="next-btn">&#10095;</div>
             </div>
-        </form>
+        </div>
+        <div class="tag">Designed by Ravi</div>
     </div>
     <script src="./script.js"></script>
 </body>
